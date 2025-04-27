@@ -18,7 +18,7 @@ public class Probe {
     private String direction;
     private int x;
     private int y;
-    private LocalDateTime createTime;
+    private LocalDateTime createTime=LocalDateTime.now();
 
     public int getId() {
         return id;
@@ -26,6 +26,15 @@ public class Probe {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public Probe() {
+    }
+
+    public Probe(String direction, int x, int y) {
+        this.direction = direction;
+        this.x = x;
+        this.y = y;
     }
 
     public String getDirection() {

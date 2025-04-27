@@ -11,6 +11,6 @@ import java.util.List;
 @Repository
 public interface ProbeRepo extends CrudRepository<Probe,Integer> {
 
-    Iterable<Probe> findAllByCreateTimeDesc();
+    Probe findTopByOrderByCreateTimeDesc();
 
 }
